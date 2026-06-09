@@ -2,50 +2,49 @@
 
 <div align="center">
   <a href="https://opensource.org/licenses/MIT" target="_blank">
-    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
   </a>
   <a href="https://www.python.org/" target="_blank">
-    <img src="https://img.shields.io/badge/Language-Python-blue.svg" alt="Python Language">
+    <img src="https://img.shields.io/badge/Language-Python-blue.svg" alt="Language: Python">
   </a>
   <a href="https://github.com/axentx/income-proof/actions" target="_blank">
     <img src="https://img.shields.io/github/workflow/status/axentx/income-proof/Build" alt="Build Status">
   </a>
   <a href="https://github.com/axentx/income-proof/stargazers" target="_blank">
-    <img src="https://img.shields.io/github/stars/axentx/income-proof" alt="GitHub Stars">
+    <img src="https://img.shields.io/github/stars/axentx/income-proof" alt="Stars">
   </a>
 </div>
 
 ---
 # 🚀 income-proof
-**Power users with standardized, legally-compliant income-proof templates.** **Automate income verification with one-click export to PDF/JSON and digital signatures.**
+**Power users with automated income-proof templates.** Generate standardized, legally-compliant income-proof documents with ease, using auto-filled templates and one-click export to PDF/JSON with digital signatures and QR-codes.
 
 ## Why income-proof?
-- **Compliance**: Generate legally-compliant income-proof templates with ease.
-- **Efficiency**: Auto-fill templates from user-uploaded data, saving time and reducing errors.
-- **Security**: One-click export to PDF/JSON with digital signatures and QR codes for secure sharing.
-- **Customization**: Support for various income-proof formats, including tax-return extracts and profit-and-loss statements.
-- **Scalability**: Designed to handle large volumes of user data and template generation.
-- **User-friendly**: Intuitive interface for easy template creation and export.
-- **Integration**: Seamless integration with existing systems for streamlined workflow.
+* **Streamlined process**: Automate income-proof document generation, reducing manual effort and increasing efficiency.
+* **Compliance guarantee**: Ensure legally-compliant templates, minimizing the risk of errors or omissions.
+* **User-friendly interface**: Easily upload user data and export documents in various formats.
+* **Digital signatures**: Enhance document security and authenticity with digital signatures and QR-codes.
+* **Customizable templates**: Adapt templates to meet specific needs, while maintaining standardization and compliance.
+* **Scalability**: Handle large volumes of documents with ease, making it an ideal solution for businesses and organizations.
+* **Cost-effective**: Reduce costs associated with manual document generation and minimize the need for external services.
 
 ## Feature Overview
 | Feature | Description |
 | --- | --- |
-| Template Generation | Auto-fill income-proof templates from user-uploaded data |
-| One-click Export | Export templates to PDF/JSON with digital signatures and QR codes |
-| Customization | Support for various income-proof formats and templates |
-| Security | Digital signatures and QR codes for secure sharing and verification |
-| Scalability | Designed to handle large volumes of user data and template generation |
+| Auto-filled templates | Generate income-proof documents using user-uploaded data |
+| One-click export | Export documents to PDF/JSON with digital signatures and QR-codes |
+| Legally-compliant templates | Ensure compliance with standardized templates |
+| Customizable templates | Adapt templates to meet specific needs |
+| Digital signatures | Enhance document security and authenticity |
+| QR-codes | Provide an additional layer of security and verification |
 
 ## Tech Stack
-* Python
-* pyproject.toml
-* requirements.txt
+*Please note that the tech stack is not yet locked. The following is a placeholder and will be updated once the tech stack is finalized.*
 
 ## Project Structure
-* business: Business logic and template generation
-* src: Source code for the application
-* tests: Unit tests and integration tests
+* `business`: Business logic and templates
+* `src`: Source code for the application
+* `tests`: Unit tests and integration tests
 
 ## Getting Started
 ```bash
@@ -56,23 +55,17 @@ git clone https://github.com/axentx/income-proof.git
 pip install -r requirements.txt
 
 # Run the application
-python src/main.py
+python -m income_proof
 ```
 
 ## Deploy
-```bash
-# Build the application
-python -m build
-
-# Deploy to production
-# TODO: Add deployment script
-```
+*Please note that the deploy process is not yet defined. The following is a placeholder and will be updated once the deploy process is finalized.*
 
 ## Status
-Last commit: d4fc7d6 - code-build cycle 20260609-010147-income-p
+income-proof is currently under development. Recent commits include updates to the README and code builds.
 
 ## Contributing
-[CONTRIBUTING.md](CONTRIBUTING.md)
+Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to income-proof.
 
 ## License
-MIT License
+income-proof is licensed under the MIT License.

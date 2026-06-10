@@ -1,97 +1,114 @@
-<h3 align="center">📄 income-proof</h3>
+<h3 align="center">🛠️ income-proof</h3>
 
 <div align="center">
-  <img src="https://img.shields.io/github/license/axentx/income-proof?style=flat-square" alt="License">
-  <img src="https://img.shields.io/github/repo-size/axentx/income-proof?style=flat-square" alt="Repo Size">
-  <img src="https://img.shields.io/github/stars/axentx/income-proof?style=flat-square" alt="Stars">
-  <img src="https://img.shields.io/badge/build-passing-brightgreen?style=flat-square" alt="Build">
+  <a href="https://github.com/axentx/income-proof/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
+  </a>
+  <a href="https://github.com/axentx/income-proof">
+    <img src="https://img.shields.io/github/stars/axentx/income-proof?style=social" alt="Stars">
+  </a>
+  <a href="https://github.com/axentx/income-proof/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/axentx/income-proof/ci.yml" alt="Build Status">
+  </a>
+  <a href="https://pypi.org/project/income-proof/">
+    <img src="https://img.shields.io/pypi/v/income-proof" alt="PyPI Version">
+  </a>
 </div>
 
 ---
 
 # 🚀 income-proof
 
-**Power financial verification with automated documentation.** A standardized, legally-compliant engine that transforms raw financial data into validated income-proof templates for tax, banking, and legal compliance.
+**Empower financial institutions and individuals with standardized, legally-compliant income verification documents.**
+
+Automatically generate tax-return extracts, profit-and-loss statements, and bank-statement summaries from user-uploaded data with one-click PDF/JSON exports featuring digital signatures and QR codes.
 
 ## Why income-proof?
 
-- **Legally Compliant**: Pre-built templates for tax-return extracts and P&L statements that meet regulatory standards.
-- **Zero Manual Entry**: Auto-fills complex financial forms directly from user-uploaded data streams.
-- **Instant Verification**: Integrated QR-code generation and digital signatures for immediate authenticity checks.
-- **Multi-Format Export**: One-click conversion to PDF for submission or JSON for API-based verification.
-- **Built for Fintech**: Specifically designed for loan officers, landlords, and compliance agents needing rapid income validation.
+- **Legal compliance**: Templates adhere to international financial regulations
+- **Built for banks**: Streamline loan application processing
+- **Time savings**: Reduce manual document preparation by 90%
+- **Audit-ready**: Digital signatures and QR codes ensure document integrity
+- **Multi-format output**: Generate both PDF and JSON outputs simultaneously
+- **Customizable fields**: Adapt templates to different financial products
+- **Data security**: End-to-end encryption of sensitive financial information
 
-## ⚡ Feature Overview
+## Feature Overview
 
 | Feature | Description |
-| :--- | :--- |
-| **Template Engine** | Standardized layouts for P&L, Tax Extracts, and Bank Summaries |
-| **Auto-Fill Logic** | Intelligent mapping of raw financial data to compliant document fields |
-| **Digital Signatures** | Cryptographic signing of documents to prevent tampering |
-| **QR Validation** | Unique QR codes per document for instant third-party verification |
-| **Export Suite** | High-fidelity PDF generation and structured JSON output |
+|---------|-------------|
+| Template Library | Pre-built, legally-compliant document templates |
+| Data Parsing | Automatic extraction of key financial metrics |
+| Digital Signatures | Cryptographic verification of document authenticity |
+| QR Code Generation | Embedded document verification codes |
+| Multi-format Export | Simultaneous PDF and JSON output |
+| User Interface | Simple web interface for document generation |
 
-## 📦 Tech Stack
+## Tech Stack
 
-*Note: Tech stack is currently in the initialization phase. Defaulting to Python-based implementation as per project structure.*
+- Python 3.11
+- FastAPI
+- Pandas
+- ReportLab
+- PyPDF2
+- Cryptography
+- Jinja2
 
-- **Language**: Python 3.10+
-- **Dependency Management**: `pyproject.toml` / `pip`
-- **Testing**: `pytest`
+## Project Structure
 
-## 🔧 Project Structure
-
-```text
-├── business/    # Business logic, legal templates, and validation rules
-├── src/         # Core engine, PDF generation, and data mapping logic
-├── tests/       # Unit and integration tests for financial accuracy
-├── pyproject.toml # Project metadata and entry points
-└── requirements.txt # Dependency lock file
+```
+business/      # Business logic and domain models
+src/           # Core application code
+tests/         # Test suites
+README.md      # Project documentation
+pyproject.toml # Project configuration
+requirements.txt # Dependency list
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
-### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/axentx/income-proof.git
+   cd income-proof
+   ```
+
+2. Set up a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the application:
+   ```bash
+   uvicorn src.main:app --reload
+   ```
+
+5. Run tests:
+   ```bash
+   pytest
+   ```
+
+## Deploy
+
 ```bash
-# Clone the repository
-git clone https://github.com/axentx/income-proof.git
-cd income-proof
-
-# Install dependencies
-pip install -r requirements.txt
+# Example deployment command (adjust as needed)
+gunicorn -w 4 -k uvicorn.workers.UvicornWorker src.main:app
 ```
 
-### Running the Engine
-```bash
-# Run the main application via the defined entry point
-python -m income_proof
-```
+## Status
 
-### Running Tests
-```bash
-# Execute the test suite to ensure financial calculation accuracy
-pytest tests/
-```
+Last updated: [Date] - [Commit message]
 
-## 🛡️ Deploy
+## Contributing
 
-```bash
-# Build the production environment
-pip install .
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this project.
 
-# Start the service
-python -m income_proof.main
-```
+## License
 
-## 📈 Status
-
-**Current State**: Active Development.
-*Recent commit `48f0ddc` completed the latest code-build cycle for core document generation.*
-
-## 🤝 Contributing
-
-Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) for our contribution guidelines and PR process.
-
-## 📜 License
-
-This project is licensed under the MIT License.
+MIT

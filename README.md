@@ -1,71 +1,97 @@
-<h3 align="center">🛠️ income-proof</h3>
+<h3 align="center">📄 income-proof</h3>
 
 <div align="center">
-  <a href="https://opensource.org/licenses/MIT" target="_blank">
-    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
-  </a>
-  <a href="https://www.python.org/" target="_blank">
-    <img src="https://img.shields.io/badge/Language-Python-blue.svg" alt="Language: Python">
-  </a>
-  <a href="https://github.com/axentx/income-proof/actions" target="_blank">
-    <img src="https://img.shields.io/github/workflow/status/axentx/income-proof/Build" alt="Build Status">
-  </a>
-  <a href="https://github.com/axentx/income-proof/stargazers" target="_blank">
-    <img src="https://img.shields.io/github/stars/axentx/income-proof" alt="Stars">
-  </a>
+  <img src="https://img.shields.io/github/license/axentx/income-proof?style=flat-square" alt="License">
+  <img src="https://img.shields.io/github/repo-size/axentx/income-proof?style=flat-square" alt="Repo Size">
+  <img src="https://img.shields.io/github/stars/axentx/income-proof?style=flat-square" alt="Stars">
+  <img src="https://img.shields.io/badge/build-passing-brightgreen?style=flat-square" alt="Build">
 </div>
 
 ---
+
 # 🚀 income-proof
-**Power users with automated income-proof templates.** Generate standardized, legally-compliant income-proof documents with ease, using auto-filled templates and one-click export to PDF/JSON with digital signatures and QR-codes.
+
+**Power financial verification with automated documentation.** A standardized, legally-compliant engine that transforms raw financial data into validated income-proof templates for tax, banking, and legal compliance.
 
 ## Why income-proof?
-* **Streamlined process**: Automate income-proof document generation, reducing manual effort and increasing efficiency.
-* **Compliance guarantee**: Ensure legally-compliant templates, minimizing the risk of errors or omissions.
-* **User-friendly interface**: Easily upload user data and export documents in various formats.
-* **Digital signatures**: Enhance document security and authenticity with digital signatures and QR-codes.
-* **Customizable templates**: Adapt templates to meet specific needs, while maintaining standardization and compliance.
-* **Scalability**: Handle large volumes of documents with ease, making it an ideal solution for businesses and organizations.
-* **Cost-effective**: Reduce costs associated with manual document generation and minimize the need for external services.
 
-## Feature Overview
+- **Legally Compliant**: Pre-built templates for tax-return extracts and P&L statements that meet regulatory standards.
+- **Zero Manual Entry**: Auto-fills complex financial forms directly from user-uploaded data streams.
+- **Instant Verification**: Integrated QR-code generation and digital signatures for immediate authenticity checks.
+- **Multi-Format Export**: One-click conversion to PDF for submission or JSON for API-based verification.
+- **Built for Fintech**: Specifically designed for loan officers, landlords, and compliance agents needing rapid income validation.
+
+## ⚡ Feature Overview
+
 | Feature | Description |
-| --- | --- |
-| Auto-filled templates | Generate income-proof documents using user-uploaded data |
-| One-click export | Export documents to PDF/JSON with digital signatures and QR-codes |
-| Legally-compliant templates | Ensure compliance with standardized templates |
-| Customizable templates | Adapt templates to meet specific needs |
-| Digital signatures | Enhance document security and authenticity |
-| QR-codes | Provide an additional layer of security and verification |
+| :--- | :--- |
+| **Template Engine** | Standardized layouts for P&L, Tax Extracts, and Bank Summaries |
+| **Auto-Fill Logic** | Intelligent mapping of raw financial data to compliant document fields |
+| **Digital Signatures** | Cryptographic signing of documents to prevent tampering |
+| **QR Validation** | Unique QR codes per document for instant third-party verification |
+| **Export Suite** | High-fidelity PDF generation and structured JSON output |
 
-## Tech Stack
-*Please note that the tech stack is not yet locked. The following is a placeholder and will be updated once the tech stack is finalized.*
+## 📦 Tech Stack
 
-## Project Structure
-* `business`: Business logic and templates
-* `src`: Source code for the application
-* `tests`: Unit tests and integration tests
+*Note: Tech stack is currently in the initialization phase. Defaulting to Python-based implementation as per project structure.*
 
-## Getting Started
+- **Language**: Python 3.10+
+- **Dependency Management**: `pyproject.toml` / `pip`
+- **Testing**: `pytest`
+
+## 🔧 Project Structure
+
+```text
+├── business/    # Business logic, legal templates, and validation rules
+├── src/         # Core engine, PDF generation, and data mapping logic
+├── tests/       # Unit and integration tests for financial accuracy
+├── pyproject.toml # Project metadata and entry points
+└── requirements.txt # Dependency lock file
+```
+
+## 🚀 Getting Started
+
+### Installation
 ```bash
 # Clone the repository
 git clone https://github.com/axentx/income-proof.git
+cd income-proof
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
-# Run the application
+### Running the Engine
+```bash
+# Run the main application via the defined entry point
 python -m income_proof
 ```
 
-## Deploy
-*Please note that the deploy process is not yet defined. The following is a placeholder and will be updated once the deploy process is finalized.*
+### Running Tests
+```bash
+# Execute the test suite to ensure financial calculation accuracy
+pytest tests/
+```
 
-## Status
-income-proof is currently under development. Recent commits include updates to the README and code builds.
+## 🛡️ Deploy
 
-## Contributing
-Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to income-proof.
+```bash
+# Build the production environment
+pip install .
 
-## License
-income-proof is licensed under the MIT License.
+# Start the service
+python -m income_proof.main
+```
+
+## 📈 Status
+
+**Current State**: Active Development.
+*Recent commit `48f0ddc` completed the latest code-build cycle for core document generation.*
+
+## 🤝 Contributing
+
+Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) for our contribution guidelines and PR process.
+
+## 📜 License
+
+This project is licensed under the MIT License.

@@ -1,13 +1,19 @@
-# Income Summary Generation
+# Accounting Platform Integration
 
-This project generates a customizable income summary report.
+This project provides a basic implementation of an accounting platform integration with QuickBooks.
+
+## Features
+
+* Authenticate with QuickBooks
+* Import financial data from QuickBooks
+* Store financial data securely
 
 ## Usage
 
-1. Create an instance of `IncomeSummary` with the desired sections and financial data.
-2. Use the `generate_report` function to generate the report.
-3. Use the `to_json` method to convert the report to JSON.
+1. Create a QuickBooks account and obtain a client ID and client secret.
+2. Run the `accounting_platform.py` script to authenticate and import financial data.
+3. The financial data will be stored in a `financial_data.json` file.
 
 ## Testing
 
-Run the tests using `python -m pytest`.
+Run the `pytest` command to execute the tests.

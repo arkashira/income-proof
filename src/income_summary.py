@@ -35,3 +35,6 @@ def generate_report(summary: IncomeSummary) -> str:
     if ReportSection.SAVINGS in summary.sections:
         report += f"Savings: {summary.savings}\n"
     return report
+
+def customize_report(income: float, expenses: float, savings: float, sections: List[ReportSection]) -> IncomeSummary:
+    return IncomeSummary(sections, income, expenses, savings)
